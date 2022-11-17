@@ -785,7 +785,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A99F57497D24EFAD06277630 /* Pods-Fetch Recipes-Fetch RecipesUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V63Q3T87B9;
@@ -804,7 +804,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1ECEFFCDF32A34B5E92E43A1 /* Pods-Fetch Recipes-Fetch RecipesUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V63Q3T87B9;

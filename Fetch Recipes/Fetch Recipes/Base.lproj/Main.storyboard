@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Onboarding View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="OnboardingViewController" customModule="Fetch_Recipes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="J9a-cg-dmB">
+                                <rect key="frame" x="0.0" y="86" width="414" height="520"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="520" id="9jf-Au-YVO"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fco-V3-XUN">
+                                    <size key="itemSize" width="410" height="626"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OnboardingCollectionViewCell" id="xfE-Pe-Zc9" customClass="OnboardingCollectionViewCell" customModule="Fetch_Recipes" customModuleProvider="target">
+                                        <rect key="frame" x="2" y="0.0" width="410" height="626"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="2eu-5p-txT">
+                                            <rect key="frame" x="0.0" y="0.0" width="410" height="626"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="b1m-81-W2o">
+                                                    <rect key="frame" x="0.0" y="8" width="410" height="546"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="b1m-81-W2o" firstAttribute="top" secondItem="2eu-5p-txT" secondAttribute="topMargin" id="0nM-ZT-kUz"/>
+                                                <constraint firstAttribute="bottom" secondItem="b1m-81-W2o" secondAttribute="bottom" constant="72" id="HQS-Wd-od4"/>
+                                                <constraint firstItem="b1m-81-W2o" firstAttribute="centerX" secondItem="2eu-5p-txT" secondAttribute="centerX" id="JES-eA-dMp"/>
+                                                <constraint firstItem="b1m-81-W2o" firstAttribute="leading" secondItem="2eu-5p-txT" secondAttribute="leading" id="gqn-NX-3eD"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="410" height="626"/>
+                                        <connections>
+                                            <outlet property="slideDescriptionLabel" destination="pWL-1k-xhh" id="Sq1-gK-Kjc"/>
+                                            <outlet property="slideImageView" destination="b1m-81-W2o" id="dzc-8K-YbC"/>
+                                            <outlet property="slideTitleLabel" destination="d9d-aQ-VTS" id="g1j-K5-sOj"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HP7-lR-bNe">
+                                <rect key="frame" x="132" y="767" width="150" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="AtF-6N-e9h"/>
+                                    <constraint firstAttribute="width" constant="150" id="IBk-1u-BhX"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Next">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.45233178409663111" green="0.45233178409663111" blue="0.45233178409663111" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" red="0.9199337138" green="0.93494097499999995" blue="0.94328004119999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="nextButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1MH-p4-LY4"/>
+                                </connections>
+                            </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="2FP-ZH-aI3">
+                                <rect key="frame" x="158.5" y="721" width="97.5" height="26"/>
+                                <color key="pageIndicatorTintColor" red="0.74977398581809795" green="0.76200536061833013" blue="0.76880195345541447" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="currentPageIndicatorTintColor" systemColor="systemOrangeColor"/>
+                            </pageControl>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="1mO-qC-fAk">
+                                <rect key="frame" x="0.0" y="605" width="414" height="107.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="2" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9d-aQ-VTS">
+                                        <rect key="frame" x="82" y="0.0" width="250" height="67"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="3qz-4a-OCX"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Find everyday cooking inspiration ">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" metaFont="system" size="28"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="1" height="-1"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWL-1k-xhh">
+                                        <rect key="frame" x="106" y="87" width="202.5" height="20.5"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Welcome to Fetch Recipes">
+                                                <attributes>
+                                                    <color key="NSColor" systemColor="systemOrangeColor"/>
+                                                    <font key="NSFont" metaFont="system" size="17"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <color key="highlightedColor" systemColor="systemOrangeColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="1mO-qC-fAk" secondAttribute="trailing" id="7Gc-ZC-I0e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HP7-lR-bNe" secondAttribute="bottom" constant="45" id="Aq8-JY-p68"/>
+                            <constraint firstItem="1mO-qC-fAk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="561" id="C64-z1-XVh"/>
+                            <constraint firstItem="1mO-qC-fAk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="L8Q-AI-NIf"/>
+                            <constraint firstItem="J9a-cg-dmB" firstAttribute="leading" secondItem="1mO-qC-fAk" secondAttribute="leading" id="LHr-rw-Cr7"/>
+                            <constraint firstItem="HP7-lR-bNe" firstAttribute="top" secondItem="2FP-ZH-aI3" secondAttribute="bottom" constant="20" id="TLa-oc-lEQ"/>
+                            <constraint firstItem="2FP-ZH-aI3" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="bZP-uL-Haf"/>
+                            <constraint firstItem="HP7-lR-bNe" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="fGz-74-aRW"/>
+                            <constraint firstItem="J9a-cg-dmB" firstAttribute="trailing" secondItem="1mO-qC-fAk" secondAttribute="trailing" id="hc0-Ar-Ebl"/>
+                            <constraint firstItem="J9a-cg-dmB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="42" id="wGb-cC-GWc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="J9a-cg-dmB" id="UgG-Kw-xlk"/>
+                        <outlet property="nextButton" destination="HP7-lR-bNe" id="ml1-ZO-XxB"/>
+                        <outlet property="pageControl" destination="2FP-ZH-aI3" id="iyl-lb-9gw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

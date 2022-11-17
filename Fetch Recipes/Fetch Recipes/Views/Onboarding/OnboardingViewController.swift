@@ -31,7 +31,7 @@ class OnboardingViewController: UIViewController {
 
 }
 
-extension OnboardingViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension OnboardingViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return slide.count
     }
@@ -41,7 +41,9 @@ extension OnboardingViewController: UICollectionViewDelegate, UICollectionViewDa
         cell.setup(slide[indexPath.row])
         return cell
     }
-    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
+    }
 }
 
 

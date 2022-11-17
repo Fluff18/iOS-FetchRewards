@@ -10,8 +10,9 @@ import Kingfisher
 
 class CategoryCollectionViewCell: UICollectionViewCell {
 
-    @IBOutlet weak var categoryImageView: UIImageView!
+    static let identifier = String(describing: CategoryCollectionViewCell.self)
     
+    @IBOutlet weak var categoryImageView: UIImageView!
     @IBOutlet weak var categoryTitleLabel: UILabel!
     
     func setup(category: FoodCategory) {

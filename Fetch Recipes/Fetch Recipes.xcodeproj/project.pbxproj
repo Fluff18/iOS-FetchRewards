@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7FA3A5669460D3C386276AB2 /* Pods_Fetch_Recipes_Fetch_RecipesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F7F0D37DAA1F890CA3113DE /* Pods_Fetch_Recipes_Fetch_RecipesUITests.framework */; };
 		8D2A4146FEF22642A74C1FE4 /* Pods_Fetch_Recipes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFFA90A86A61A59DF74E158A /* Pods_Fetch_Recipes.framework */; };
+		A52C757A29263DE500D27EB3 /* CustomCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52C757929263DE500D27EB3 /* CustomCardView.swift */; };
 		A5D59D222925BF830027DA49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D59D212925BF830027DA49 /* AppDelegate.swift */; };
 		A5D59D242925BF830027DA49 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D59D232925BF830027DA49 /* SceneDelegate.swift */; };
 		A5D59D292925BF830027DA49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5D59D272925BF830027DA49 /* Main.storyboard */; };
@@ -52,6 +53,7 @@
 		2905FD0A640ABD3DAC37D4EC /* Pods-Fetch Recipes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fetch Recipes.debug.xcconfig"; path = "Target Support Files/Pods-Fetch Recipes/Pods-Fetch Recipes.debug.xcconfig"; sourceTree = "<group>"; };
 		5799414A8A03AE62650F42CA /* Pods-Fetch RecipesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fetch RecipesTests.debug.xcconfig"; path = "Target Support Files/Pods-Fetch RecipesTests/Pods-Fetch RecipesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5F7F0D37DAA1F890CA3113DE /* Pods_Fetch_Recipes_Fetch_RecipesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fetch_Recipes_Fetch_RecipesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A52C757929263DE500D27EB3 /* CustomCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCardView.swift; sourceTree = "<group>"; };
 		A5D59D1E2925BF830027DA49 /* Fetch Recipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fetch Recipes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5D59D212925BF830027DA49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5D59D232925BF830027DA49 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +134,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		A52C757829263DCA00D27EB3 /* CardView */ = {
+			isa = PBXGroup;
+			children = (
+				A52C757929263DE500D27EB3 /* CustomCardView.swift */,
+			);
+			path = CardView;
+			sourceTree = "<group>";
+		};
 		A5D59D152925BF820027DA49 = {
 			isa = PBXGroup;
 			children = (
@@ -209,6 +219,7 @@
 		A5D59D532925C3AE0027DA49 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				A52C757829263DCA00D27EB3 /* CardView */,
 				A5F09C12292620BB0077F51C /* CollectionViewCells */,
 			);
 			path = CustomViews;
@@ -509,6 +520,7 @@
 				A5D59D562925C3DC0027DA49 /* OnboardingViewController.swift in Sources */,
 				A5F09C1B2926249E0077F51C /* String+Extension.swift in Sources */,
 				A5D59D5F2925CD290027DA49 /* OnboardingCollectionViewCell.swift in Sources */,
+				A52C757A29263DE500D27EB3 /* CustomCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

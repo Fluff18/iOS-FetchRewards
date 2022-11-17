@@ -23,7 +23,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="520" id="9jf-Au-YVO"/>
                                 </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fco-V3-XUN">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="fco-V3-XUN">
                                     <size key="itemSize" width="410" height="626"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -79,16 +79,16 @@
                                     <action selector="nextButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1MH-p4-LY4"/>
                                 </connections>
                             </button>
-                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="2FP-ZH-aI3">
+                            <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="2FP-ZH-aI3">
                                 <rect key="frame" x="158.5" y="721" width="97.5" height="26"/>
                                 <color key="pageIndicatorTintColor" red="0.74977398581809795" green="0.76200536061833013" blue="0.76880195345541447" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="currentPageIndicatorTintColor" systemColor="systemOrangeColor"/>
                             </pageControl>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="1mO-qC-fAk">
-                                <rect key="frame" x="0.0" y="605" width="414" height="107.5"/>
+                                <rect key="frame" x="0.0" y="605" width="414" height="113.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="2" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9d-aQ-VTS">
-                                        <rect key="frame" x="82" y="0.0" width="250" height="67"/>
+                                        <rect key="frame" x="82" y="0.0" width="250" height="73"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="3qz-4a-OCX"/>
                                         </constraints>
@@ -96,7 +96,7 @@
                                             <fragment content="Find everyday cooking inspiration ">
                                                 <attributes>
                                                     <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                    <font key="NSFont" metaFont="system" size="28"/>
+                                                    <font key="NSFont" size="28" name="Futura-Medium"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -105,7 +105,7 @@
                                         <size key="shadowOffset" width="1" height="-1"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWL-1k-xhh">
-                                        <rect key="frame" x="106" y="87" width="202.5" height="20.5"/>
+                                        <rect key="frame" x="106" y="93" width="202.5" height="20.5"/>
                                         <attributedString key="attributedText">
                                             <fragment content="Welcome to Fetch Recipes">
                                                 <attributes>
@@ -117,6 +117,12 @@
                                         <color key="highlightedColor" systemColor="systemOrangeColor"/>
                                     </label>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="pWL-1k-xhh" firstAttribute="top" secondItem="d9d-aQ-VTS" secondAttribute="bottom" constant="20" id="6PL-oH-sxY"/>
+                                    <constraint firstItem="d9d-aQ-VTS" firstAttribute="top" secondItem="1mO-qC-fAk" secondAttribute="top" id="IuJ-j8-btG"/>
+                                    <constraint firstAttribute="bottom" secondItem="pWL-1k-xhh" secondAttribute="bottom" id="a39-Xd-OYd"/>
+                                    <constraint firstItem="pWL-1k-xhh" firstAttribute="top" secondItem="d9d-aQ-VTS" secondAttribute="bottom" constant="20" id="zE8-za-axi"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -127,11 +133,15 @@
                             <constraint firstItem="1mO-qC-fAk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="561" id="C64-z1-XVh"/>
                             <constraint firstItem="1mO-qC-fAk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="L8Q-AI-NIf"/>
                             <constraint firstItem="J9a-cg-dmB" firstAttribute="leading" secondItem="1mO-qC-fAk" secondAttribute="leading" id="LHr-rw-Cr7"/>
+                            <constraint firstItem="1mO-qC-fAk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LPz-hy-KJB"/>
                             <constraint firstItem="HP7-lR-bNe" firstAttribute="top" secondItem="2FP-ZH-aI3" secondAttribute="bottom" constant="20" id="TLa-oc-lEQ"/>
                             <constraint firstItem="2FP-ZH-aI3" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="bZP-uL-Haf"/>
                             <constraint firstItem="HP7-lR-bNe" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="fGz-74-aRW"/>
                             <constraint firstItem="J9a-cg-dmB" firstAttribute="trailing" secondItem="1mO-qC-fAk" secondAttribute="trailing" id="hc0-Ar-Ebl"/>
+                            <constraint firstItem="1mO-qC-fAk" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="spz-Dt-k9j"/>
                             <constraint firstItem="J9a-cg-dmB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="42" id="wGb-cC-GWc"/>
+                            <constraint firstItem="1mO-qC-fAk" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="wJz-F2-r6x"/>
+                            <constraint firstItem="1mO-qC-fAk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yZM-0V-Qmr"/>
                         </constraints>
                     </view>
                     <connections>
@@ -143,6 +153,40 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="34.782608695652179" y="97.767857142857139"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="XD8-Ss-aou">
+            <objects>
+                <viewController id="06a-e0-OEN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QQI-Ml-KBT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="iia-JK-ZQT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="SYk-Cv-tCu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qR5-n3-M0Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1644.9275362318842" y="86.383928571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iDP-Fi-Pkt">
+            <objects>
+                <navigationController storyboardIdentifier="HomeNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="5Id-gp-p01" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YnB-9Z-rS2">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="06a-e0-OEN" kind="relationship" relationship="rootViewController" id="gcc-Jl-0aQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BhD-uR-6R7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="734.78260869565224" y="86.383928571428569"/>
         </scene>
     </scenes>
     <resources>

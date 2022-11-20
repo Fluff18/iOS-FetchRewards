@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class CardView: UIView {
+class CustomCardView: UIView {
     
     override init(frame: CGRect) {
         super .init(frame: frame)

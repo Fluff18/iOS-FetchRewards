@@ -29,6 +29,11 @@ class OnboardingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+//        let service = NetworkManager()
+//        let request = service.createReq(route: .temp
+//                          , method: .get, parameters: ["First Name": "Fetch", "Last Name": "Rewards"])
+//        print("THE URL is: \(request?.url)")
+        
         collectionView.delegate = self
         collectionView.dataSource = self
         

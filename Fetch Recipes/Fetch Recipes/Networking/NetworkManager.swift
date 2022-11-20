@@ -13,11 +13,11 @@ struct NetworkManager {
     
     private init() {}
      
-    func trialRequest(completion: @escaping(Result<String, Error>) -> Void) {
-        request(route: .temp, method: .get, completion: completion)
+    func trialRequest(completion: @escaping(Result<[FoodCategory], Error>) -> Void) {
+        request(route: .categories, method: .get, completion: completion)
     }
     
-    private func request<T: Codable>(route: Route,
+    private func request<T: Decodable>(route: Route,
                                      method: Method,
                                      parameters: [String: Any]? = nil,
                                      completion: @escaping(Result<T, Error>) -> Void )  {

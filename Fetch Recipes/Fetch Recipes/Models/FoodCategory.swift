@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct FoodCategory {
-    let id, name, image: String?
+struct FoodCategory: Codable {
+    let idCategory, strCategory, strCategoryThumb, strCategoryDescription: String?
 }

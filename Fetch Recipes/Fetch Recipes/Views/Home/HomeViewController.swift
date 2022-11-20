@@ -13,13 +13,12 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var ingredientsCollectionView: UICollectionView!
     @IBOutlet weak var areaCollectionView: UICollectionView!
     
-    var categories: [FoodCategory] = [.init(id: "1", name: "Sample0", image: "https://picsum.photos/100/200"),
-                                      .init(id: "1", name: "Sample1", image: "https://picsum.photos/100/200"),
-                                      .init(id: "1", name: "Sample2", image: "https://picsum.photos/100/200"),
-                                      .init(id: "1", name: "Sample3", image: "https://picsum.photos/100/200"),
-                                      .init(id: "1", name: "Sample4", image: "https://picsum.photos/100/200"),
-                                      .init(id: "1", name: "Sample5", image: "https://picsum.photos/100/200")]
-    
+    var categories: [FoodCategory] = []
+//    [.init(id: "1", name: "Sample0", image: "https://picsum.photos/100/200", description: ""),
+//                                      .init(id: "1", name: "Sample1", image: "https://picsum.photos/100/200", description: ""),
+//                                      .init(id: "1", name: "Sample2", image: "https://picsum.photos/100/200", description: ""),
+//                                      .init(id: "1", name: "Sample3", image: "https://picsum.photos/100/200", description: "Helo")]
+//    
     var ingredients: [Ingredient] = [.init(id: "1", ingredient: "Sample0", image: "https://picsum.photos/100/200"),
                                      .init(id: "1", ingredient: "Sample1", image: "https://picsum.photos/100/200"),
                                      .init(id: "1", ingredient: "Sample2", image: "https://picsum.photos/100/200"),

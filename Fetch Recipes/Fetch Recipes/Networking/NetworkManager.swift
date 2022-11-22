@@ -13,8 +13,8 @@ struct NetworkManager {
     
     private init() {}
      
-    func trialRequest(completion: @escaping(Result<[FoodCategory], Error>) -> Void) {
-        request(route: .categories, method: .get, completion: completion)
+    func fetchDesert(completion: @escaping(Result<[Dessert], Error>) -> Void) {
+        request(route: .dessert, method: .get, completion: completion)
     }
     
     private func request<T: Decodable>(route: Route,
@@ -33,7 +33,7 @@ struct NetworkManager {
             if let data = data {
                 result = .success(data)
                 let responseString = String(data: data, encoding: .utf8) ?? "Could not convert data to String"
-                print("The response is :\(responseString)")
+//                print("The response is :\(responseString)")
             }
             else if let error = error {
                 result = .failure(error)
@@ -58,14 +58,15 @@ struct NetworkManager {
                 completion(.failure(AppError.errorDecoding))
                 return
             }
-            if let error = response.error {
-                completion(.failure(AppError.serverError(error)))
-            }
-            if let decodedData =  response.data {
-                completion(.success(decodedData))
-            }
-            else {
-                completion(.failure(AppError.noData))
+//            if let error = response.error {
+//                completion(.failure(AppError.serverError(error)))
+//            }
+            if let dessert_Name = response.strMeal {
+                if let dessert_Thumb =  response.strMealThumb {
+                    if let dessert_Id =  response.idMeal {
+                        completion(.success(dessert_Id as! T))
+                    }
+                }
             }
         case .failure(let error):
             completion(.failure(error))

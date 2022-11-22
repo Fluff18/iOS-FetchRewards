@@ -4,7 +4,7 @@
 //
 //  Created by Luminosity on 11/17/22.
 //
-
+import ProgressHUD
 import UIKit
 
 class HomeViewController: UIViewController {
@@ -13,20 +13,18 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var ingredientsCollectionView: UICollectionView!
     @IBOutlet weak var areaCollectionView: UICollectionView!
     
-    var categories: [FoodCategory] = []
-//    [.init(id: "1", name: "Sample0", image: "https://picsum.photos/100/200", description: ""),
-//                                      .init(id: "1", name: "Sample1", image: "https://picsum.photos/100/200", description: ""),
-//                                      .init(id: "1", name: "Sample2", image: "https://picsum.photos/100/200", description: ""),
-//                                      .init(id: "1", name: "Sample3", image: "https://picsum.photos/100/200", description: "Helo")]
-//    
-    var ingredients: [Ingredient] = [.init(id: "1", ingredient: "Sample0", image: "https://picsum.photos/100/200"),
+    var categories: [FoodCategory] = [.init(idCategory: "1", strCategory: "Sample1", strCategoryThumb: "https://picsum.photos/100/200", strCategoryDescription: ""),
+                                      .init(idCategory: "1", strCategory: "Sample2", strCategoryThumb: "https://picsum.photos/100/200", strCategoryDescription: ""),
+                                      .init(idCategory: "1", strCategory: "Sample3", strCategoryThumb: "https://picsum.photos/100/200", strCategoryDescription: "Helo")]
+    
+    var ingredients: [Ingredient] = [.init(id: "1", ingredient: "Dessert", image: "https://www.themealdb.com/images/category/dessert.png"),
                                      .init(id: "1", ingredient: "Sample1", image: "https://picsum.photos/100/200"),
                                      .init(id: "1", ingredient: "Sample2", image: "https://picsum.photos/100/200"),
                                      .init(id: "1", ingredient: "Sample3", image: "https://picsum.photos/100/200"),
                                      .init(id: "1", ingredient: "Sample4", image: "https://picsum.photos/100/200"),
                                      .init(id: "1", ingredient: "Sample5", image: "https://picsum.photos/100/200")]
     
-    var area: [Area] = [.init(id: "1", country: "Sample0", image: "https://picsum.photos/100/200"),
+    var area: [Area] = [.init(id: "1", country: "Dessert", image: "https://www.themealdb.com/images/category/dessert.png"),
                         .init(id: "1", country: "Sample1", image: "https://picsum.photos/100/200"),
                         .init(id: "1", country: "Sample2", image: "https://picsum.photos/100/200"),
                         .init(id: "1", country: "Sample3", image: "https://picsum.photos/100/200"),
@@ -35,16 +33,17 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        view.backgroundColor  = .lightGray
-        NetworkManager.shared.trialRequest { (result) in
+        ProgressHUD.show()
+        NetworkManager.shared.fetchDesert { (result) in
             switch result {
             case .success(let data):
                 print("The data is \(data)")
+                ProgressHUD.dismiss()
             case .failure(let error):
                 print("The error is \(error.localizedDescription)")
+                ProgressHUD.showError(error.localizedDescription)
             }
         }
-        
         
         catogoryCollectionView.delegate = self
         catogoryCollectionView.dataSource = self
@@ -58,7 +57,7 @@ class HomeViewController: UIViewController {
         
         
     }
-    
+
     private func registerCells() {
         catogoryCollectionView.register(UINib(nibName: CategoryCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: CategoryCollectionViewCell.identifier)
         

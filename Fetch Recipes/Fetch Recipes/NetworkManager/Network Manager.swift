@@ -17,6 +17,10 @@ struct NetworkManager {
         request(route: .region, method: .get, completion: completion)
     }
     
+    /// Function to get all the desserts
+    func getDesserts(completion: @escaping(Result<[AllDesserts], Error>) -> Void) {
+        request(route: .deserts, method: .get, completion: completion)
+    }
     
     /// This function helps us generate the URLRequest
     /// - Parameters:
@@ -61,9 +65,9 @@ struct NetworkManager {
     ///   - method: The type of request to be made
     ///   - parameters: Extra information that has to be passed to the backend
     private func request<T: Decodable>(route: Route,
-                                     method: Method,
-                                     parameters: [String: Any]? = nil,
-                                     completion: @escaping(Result<T, Error>) -> Void) {
+                                       method: Method,
+                                       parameters: [String: Any]? = nil,
+                                       completion: @escaping(Result<T, Error>) -> Void) {
         guard let request = createRequest(route: route, method: method, parameters: parameters) else {
             completion(.failure(AppError.unknownError))
             return
@@ -90,6 +94,10 @@ struct NetworkManager {
         
     }
     
+    /// Decode the JSON response
+    /// - Parameters:
+    ///   - result: Data/Error
+    ///   - completion: Completion Handler
     private func handeResponse<T: Decodable>(result: Result<Data, Error>?, completion: (Result<T, Error>) -> Void) {
         
         guard let result = result else {

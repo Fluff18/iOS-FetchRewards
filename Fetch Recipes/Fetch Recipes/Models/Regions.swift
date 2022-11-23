@@ -9,8 +9,5 @@ import Foundation
 
 struct Regions: Codable {
     let strArea: String
-    
-//    init(strArea: String) {
-//        self.strArea = strArea
-//    }
+
 }

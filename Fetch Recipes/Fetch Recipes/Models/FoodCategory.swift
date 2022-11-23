@@ -8,5 +8,8 @@
 import Foundation
 
 struct FoodCategory: Decodable {
-    let strArea: String
+    let idCategory: String
+    let strCategory: String
+    let strCategoryThumb: String?
+    let strCategoryDescription: String?
 }

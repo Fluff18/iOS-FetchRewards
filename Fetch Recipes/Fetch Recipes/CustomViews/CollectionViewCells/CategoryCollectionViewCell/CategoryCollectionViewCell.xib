@@ -30,7 +30,6 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="175" id="Ufn-hI-7Po"/>
-                            <constraint firstAttribute="trailing" secondItem="mLd-v4-W4c" secondAttribute="trailing" constant="24" id="a6k-vf-gj8"/>
                             <constraint firstItem="mLd-v4-W4c" firstAttribute="leading" secondItem="4Fi-vA-duO" secondAttribute="leading" constant="24" id="ca8-Nb-y1I"/>
                             <constraint firstAttribute="bottom" secondItem="mLd-v4-W4c" secondAttribute="bottom" constant="18" id="j9c-cT-uQE"/>
                             <constraint firstItem="mLd-v4-W4c" firstAttribute="top" secondItem="4Fi-vA-duO" secondAttribute="top" constant="18" id="lpS-fo-9hW"/>

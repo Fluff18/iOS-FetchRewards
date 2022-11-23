@@ -19,9 +19,9 @@ enum Route {
         case .region:
             return "json/v1/1/list.php?a=list"
         case .deserts:
-            return ""
+            return "json/v1/1/filter.php?c=Dessert"
         case .dessert_recipe:
-            return ""
+            return "json/v1/1/lookup.php?i="
         }
     }
 }

@@ -8,14 +8,90 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "C03049FE-1867-427B-A13B-5222EC74F9BF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Fetch Recipes/Views/Home/HomeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "collectionView(_:cellForItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8B72845F-FCAF-4786-9E35-2DD9751295B5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Fetch Recipes/Views/Home/HomeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "137A0493-C1BE-4589-80D9-486411FF71A0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Fetch Recipes/CustomViews/CollectionViewCells/IngredientsViewCell/IngredientCollectionViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F9D8FA5A-F241-4FCC-92E2-1E03B8C95D62"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Fetch Recipes/Views/Home/HomeViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "collectionView(_:numberOfItemsInSection:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BD8F73BC-A3FF-4D71-AA9B-4DCF42560D6B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Fetch Recipes/Views/Home/HomeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "collectionView(_:cellForItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3B6C385B-49E3-4A53-A13A-5476E262B6BB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Fetch Recipes/Views/Home/HomeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -23,124 +99,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "335D4097-7262-4688-9FCC-CA1BD23B60E6"
+            uuid = "625906CA-FCB6-4BDF-A0B4-20F3F5EC0DEA"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Fetch Recipes/Views/Home/HomeViewController.swift"
+            filePath = "Fetch Recipes/NetworkManager/Network Manager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
-            landmarkName = "categories"
-            landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "335D4097-7262-4688-9FCC-CA1BD23B60E6 - 5f10caa6b345e38e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Fetch_Recipes.HomeViewController.categories.getter : Swift.Array&lt;Fetch_Recipes.FoodCategory&gt;"
-                  moduleName = "Fetch Recipes"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/luminosity/Desktop/FetchRewards/Fetch%20Recipes/Fetch%20Recipes/Views/Home/HomeViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "90">
-               </Location>
-               <Location
-                  uuid = "335D4097-7262-4688-9FCC-CA1BD23B60E6 - 77af8317baab3792"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Fetch_Recipes.HomeViewController.categories.setter : Swift.Array&lt;Fetch_Recipes.FoodCategory&gt;"
-                  moduleName = "Fetch Recipes"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/luminosity/Desktop/FetchRewards/Fetch%20Recipes/Fetch%20Recipes/Views/Home/HomeViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "116">
-               </Location>
-               <Location
-                  uuid = "335D4097-7262-4688-9FCC-CA1BD23B60E6 - d7d4d178400a6681"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Fetch_Recipes.HomeViewController.categories.modify : Swift.Array&lt;Fetch_Recipes.FoodCategory&gt;"
-                  moduleName = "Fetch Recipes"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/luminosity/Desktop/FetchRewards/Fetch%20Recipes/Fetch%20Recipes/Views/Home/HomeViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "0">
-               </Location>
-               <Location
-                  uuid = "335D4097-7262-4688-9FCC-CA1BD23B60E6 - 87f88b29d63e4d7f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Fetch_Recipes.HomeViewController.categories.modify : Swift.Array&lt;Fetch_Recipes.FoodCategory&gt; with unmangled suffix &quot;.resume.0&quot;"
-                  moduleName = "Fetch Recipes"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/luminosity/Desktop/FetchRewards/Fetch%20Recipes/Fetch%20Recipes/Views/Home/HomeViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "15">
-               </Location>
-               <Location
-                  uuid = "335D4097-7262-4688-9FCC-CA1BD23B60E6 - e490e7841899e059"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Fetch_Recipes.HomeViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Fetch_Recipes.HomeViewController"
-                  moduleName = "Fetch Recipes"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/luminosity/Desktop/FetchRewards/Fetch%20Recipes/Fetch%20Recipes/Views/Home/HomeViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "220">
-               </Location>
-               <Location
-                  uuid = "335D4097-7262-4688-9FCC-CA1BD23B60E6 - ac578726000e6378"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Fetch_Recipes.HomeViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Fetch_Recipes.HomeViewController&gt;"
-                  moduleName = "Fetch Recipes"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/luminosity/Desktop/FetchRewards/Fetch%20Recipes/Fetch%20Recipes/Views/Home/HomeViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "159">
-               </Location>
-            </Locations>
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "request(route:method:parameters:completion:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "8B72845F-FCAF-4786-9E35-2DD9751295B5"
+            uuid = "C6BF7B62-E208-470A-BDA5-73316E5E9A49"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Fetch Recipes/Views/Home/HomeViewController.swift"
+            filePath = "Fetch Recipes/NetworkManager/Network Manager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
-            landmarkName = "registerCells()"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
+            landmarkName = "handeResponse(result:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

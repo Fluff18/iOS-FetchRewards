@@ -11,38 +11,30 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryCollectionViewCell" id="gTV-IL-0wX" customClass="CategoryCollectionViewCell" customModule="Fetch_Recipes" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="150" height="50"/>
+            <rect key="frame" x="0.0" y="0.0" width="175" height="50"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="150" height="50"/>
+                <rect key="frame" x="0.0" y="0.0" width="175" height="50"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Fi-vA-duO" customClass="CardView" customModule="Fetch_Recipes" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="175" height="50"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="URz-3x-WUc">
-                                <rect key="frame" x="8" y="5" width="40" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="Na0-gn-4ly"/>
-                                    <constraint firstAttribute="height" constant="40" id="jSr-94-NJ0"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLd-v4-W4c">
-                                <rect key="frame" x="56" y="18" width="111" height="14.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <rect key="frame" x="24" y="18" width="143" height="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="URz-3x-WUc" secondAttribute="trailing" constant="152" id="LB2-xk-GYV"/>
                             <constraint firstAttribute="width" constant="175" id="Ufn-hI-7Po"/>
-                            <constraint firstItem="URz-3x-WUc" firstAttribute="top" secondItem="4Fi-vA-duO" secondAttribute="top" constant="5" id="ebk-G1-RPR"/>
-                            <constraint firstItem="URz-3x-WUc" firstAttribute="leading" secondItem="4Fi-vA-duO" secondAttribute="leading" constant="8" id="hTS-2g-2Zf"/>
-                            <constraint firstItem="mLd-v4-W4c" firstAttribute="centerY" secondItem="URz-3x-WUc" secondAttribute="centerY" id="hYJ-Xh-CHS"/>
-                            <constraint firstItem="mLd-v4-W4c" firstAttribute="leading" secondItem="URz-3x-WUc" secondAttribute="trailing" constant="8" id="o77-l1-Foz"/>
-                            <constraint firstAttribute="bottom" secondItem="URz-3x-WUc" secondAttribute="bottom" constant="5" id="rvP-14-f8B"/>
+                            <constraint firstAttribute="trailing" secondItem="mLd-v4-W4c" secondAttribute="trailing" constant="24" id="a6k-vf-gj8"/>
+                            <constraint firstItem="mLd-v4-W4c" firstAttribute="leading" secondItem="4Fi-vA-duO" secondAttribute="leading" constant="24" id="ca8-Nb-y1I"/>
+                            <constraint firstAttribute="bottom" secondItem="mLd-v4-W4c" secondAttribute="bottom" constant="18" id="j9c-cT-uQE"/>
+                            <constraint firstItem="mLd-v4-W4c" firstAttribute="top" secondItem="4Fi-vA-duO" secondAttribute="top" constant="18" id="lpS-fo-9hW"/>
+                            <constraint firstItem="mLd-v4-W4c" firstAttribute="top" secondItem="4Fi-vA-duO" secondAttribute="top" constant="18" id="pwN-46-eWP"/>
                             <constraint firstAttribute="trailing" secondItem="mLd-v4-W4c" secondAttribute="trailing" constant="8" id="w6H-A1-Byp"/>
                         </constraints>
                     </view>
@@ -55,12 +47,11 @@
                 <constraint firstAttribute="trailing" secondItem="4Fi-vA-duO" secondAttribute="trailing" id="lBz-1m-fab"/>
                 <constraint firstItem="4Fi-vA-duO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="n4b-oT-o6d"/>
             </constraints>
-            <size key="customSize" width="150" height="50"/>
+            <size key="customSize" width="175" height="50"/>
             <connections>
-                <outlet property="CategoryImageView" destination="URz-3x-WUc" id="xvj-CN-xRl"/>
                 <outlet property="categoryTitleLabel" destination="mLd-v4-W4c" id="aNc-cP-kDU"/>
             </connections>
-            <point key="canvasLocation" x="210.1449275362319" y="93.75"/>
+            <point key="canvasLocation" x="228.2608695652174" y="93.75"/>
         </collectionViewCell>
     </objects>
     <resources>

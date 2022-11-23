@@ -12,16 +12,24 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var catogoryCollectionView: UICollectionView!
     
     
-    var categories: [FoodCategory] = [.init(id: "1", name: "Sample0", image: "https://picsum.photos/100/200"),
-                                      .init(id: "1", name: "Sample1", image: "https://picsum.photos/100/200"),
-                                      .init(id: "1", name: "Sample2", image: "https://picsum.photos/100/200"),
-                                      .init(id: "1", name: "Sample3", image: "https://picsum.photos/100/200"),
-                                      .init(id: "1", name: "Sample4", image: "https://picsum.photos/100/200"),
-                                      .init(id: "1", name: "Sample5", image: "https://picsum.photos/100/200")]
+    var categories: [FoodCategory] = [.init(id: "1", name: "Sample0"),
+                                      .init(id: "1", name: "Sample1"),
+                                      .init(id: "1", name: "Sample2"),
+                                      .init(id: "1", name: "Sample3"),
+                                      .init(id: "1", name: "Sample4"),
+                                      .init(id: "1", name: "Sample5")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        view.backgroundColor  = .lightGray
+        
+        NetworkManager.shared.getRegions() { (result) in
+            switch result {
+            case .success(let data):
+                print("The data after decoding is:\(data)")
+            case .failure(let error):
+                print("The error is \(error.localizedDescription)")
+            }
+        }
         
         catogoryCollectionView.delegate = self
         catogoryCollectionView.dataSource = self

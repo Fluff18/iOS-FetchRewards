@@ -345,7 +345,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="catogoryCollectionView" destination="CeB-cO-Q5c" id="8ok-jH-4vx"/>
-                        <outlet property="foodCategoryCollectionView" destination="CeB-cO-Q5c" id="5Dt-Rn-gT3"/>
+                        <outlet property="foodCategoryCollectionView" destination="Bzc-MN-9dP" id="B75-3s-43z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qR5-n3-M0Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -355,7 +355,6 @@
         <!--View Controller-->
         <scene sceneID="4UX-xL-gSn">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qHP-x0-xJx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="7zG-3y-snO" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="InP-Wq-Ugb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -443,6 +442,7 @@
                         </constraints>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qHP-x0-xJx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3183" y="86"/>
         </scene>

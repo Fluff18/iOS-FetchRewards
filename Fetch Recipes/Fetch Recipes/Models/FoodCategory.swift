@@ -8,5 +8,5 @@
 import Foundation
 
 struct FoodCategory: Decodable {
-    let id, name: String
+    let strArea: String
 }

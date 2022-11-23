@@ -6,6 +6,7 @@ target 'Fetch Recipes' do
   use_frameworks!
 
   # Pods for Fetch Recipes
+    pod "ProgressHUD"
     pod "Kingfisher"
   target 'Fetch RecipesTests' do
     inherit! :search_paths

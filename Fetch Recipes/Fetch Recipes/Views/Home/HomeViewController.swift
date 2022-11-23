@@ -6,29 +6,30 @@
 //
 
 import UIKit
+import ProgressHUD
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, ObservableObject {
 
     @IBOutlet weak var catogoryCollectionView: UICollectionView!
     
     
-    var categories: [FoodCategory] = [.init(id: "1", name: "Sample0"),
-                                      .init(id: "1", name: "Sample1"),
-                                      .init(id: "1", name: "Sample2"),
-                                      .init(id: "1", name: "Sample3"),
-                                      .init(id: "1", name: "Sample4"),
-                                      .init(id: "1", name: "Sample5")]
+    var categories: [Regions] = [.init(strArea: "12")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        ProgressHUD.show()
         NetworkManager.shared.getRegions() { (result) in
             switch result {
             case .success(let data):
                 print("The data after decoding is:\(data)")
+                self.categories = data.map({ Regions.init(strArea: $0.strArea)})
+                ProgressHUD.dismiss()
             case .failure(let error):
                 print("The error is \(error.localizedDescription)")
+                ProgressHUD.showError(error.localizedDescription)
             }
+            self.categories.append(.init(strArea: "asdad"))
+            print(self.categories)
         }
         
         catogoryCollectionView.delegate = self

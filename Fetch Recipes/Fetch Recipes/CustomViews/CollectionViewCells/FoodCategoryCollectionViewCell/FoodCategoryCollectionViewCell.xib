@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FoodCategoryCollectionViewCell" id="gTV-IL-0wX" customClass="FoodCategoryCollectionViewCell">
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FoodCategoryCollectionViewCell" id="gTV-IL-0wX" customClass="FoodCategoryCollectionViewCell" customModule="Fetch_Recipes" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="180" height="300"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -63,8 +63,8 @@
             </constraints>
             <size key="customSize" width="180" height="300"/>
             <connections>
-                <outlet property="FoodCategoryImage" destination="QNc-Z1-zpD" id="Be2-99-vxD"/>
-                <outlet property="FoodCategoryTitle" destination="HeY-Nb-xgQ" id="rKo-Si-TTw"/>
+                <outlet property="FoodCategoryImage" destination="QNc-Z1-zpD" id="H2E-FC-lbC"/>
+                <outlet property="FoodCategoryTitle" destination="HeY-Nb-xgQ" id="WbN-lM-JMZ"/>
             </connections>
             <point key="canvasLocation" x="231.8840579710145" y="145.3125"/>
         </collectionViewCell>

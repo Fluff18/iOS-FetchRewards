@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5Id-gp-p01">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NL9-rh-BX0">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -352,10 +352,10 @@
             </objects>
             <point key="canvasLocation" x="1644.9275362318842" y="86.383928571428569"/>
         </scene>
-        <!--View Controller-->
+        <!--All Dishes-->
         <scene sceneID="m55-Je-gCw">
             <objects>
-                <viewController id="NL9-rh-BX0" sceneMemberID="viewController">
+                <viewController id="NL9-rh-BX0" customClass="AllDishes" customModule="Fetch_Recipes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fHA-16-dtD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -364,7 +364,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="qWe-ZV-QDl" customClass="AllDishesTableViewCell" customModule="Fetch_Recipes" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="AllDishesTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AllDishesTableViewCell" id="qWe-ZV-QDl" customClass="AllDishesTableViewCell" customModule="Fetch_Recipes" customModuleProvider="target" propertyAccessControl="none">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qWe-ZV-QDl" id="9Hx-Xe-7o4">
@@ -379,15 +379,15 @@
                                                         <constraint firstAttribute="width" secondItem="hZR-We-pBy" secondAttribute="height" multiplier="1:1" id="lhq-Ee-mJn"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Oq-hc-IxI">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Oq-hc-IxI">
                                                     <rect key="frame" x="140" y="25" width="254" height="50"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="27"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="3Oq-hc-IxI" secondAttribute="trailing" constant="47" id="78x-0X-sN1"/>
+                                                <constraint firstAttribute="trailing" secondItem="3Oq-hc-IxI" secondAttribute="trailing" constant="20" id="78x-0X-sN1"/>
                                                 <constraint firstItem="3Oq-hc-IxI" firstAttribute="top" secondItem="9Hx-Xe-7o4" secondAttribute="topMargin" constant="14" id="Clj-XY-wTN"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="3Oq-hc-IxI" secondAttribute="bottom" constant="14" id="RTi-pJ-gDI"/>
                                                 <constraint firstItem="3Oq-hc-IxI" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="hZR-We-pBy" secondAttribute="trailing" constant="8" symbolic="YES" id="Rky-Kl-9Xx"/>
@@ -413,6 +413,9 @@
                             <constraint firstItem="vBz-Ig-mzE" firstAttribute="top" secondItem="fHA-16-dtD" secondAttribute="top" id="ugB-6D-h98"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="vBz-Ig-mzE" id="e4J-iM-3X9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QIo-sV-4Dw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

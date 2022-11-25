@@ -18,7 +18,7 @@ class HomeViewController: UIViewController, ObservableObject {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        title = "Fetch Recipes"
         
         catogoryCollectionView.delegate = self
         catogoryCollectionView.dataSource = self

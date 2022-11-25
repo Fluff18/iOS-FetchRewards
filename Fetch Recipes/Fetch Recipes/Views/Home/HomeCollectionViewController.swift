@@ -12,7 +12,6 @@ class HomeCollectionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        title = "Fetch Recipes"
         
     }
     

@@ -12,7 +12,8 @@ enum Route {
     
     case region
     case deserts
-    case dessert_recipe
+    case dessertRecipe
+    case foodCategories
     
     var description: String {
         switch self {
@@ -20,8 +21,10 @@ enum Route {
             return "json/v1/1/list.php?a=list"
         case .deserts:
             return "json/v1/1/filter.php?c=Dessert"
-        case .dessert_recipe:
+        case .dessertRecipe:
             return "json/v1/1/lookup.php?i="
+        case .foodCategories:
+            return "json/v1/1/categories.php"
         }
     }
 }

@@ -19,39 +19,43 @@ class HomeViewController: UIViewController, ObservableObject {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        setupCells()
+        
         catogoryCollectionView.delegate = self
         catogoryCollectionView.dataSource = self
         
         foodCategoryCollectionView.delegate = self
         foodCategoryCollectionView.dataSource = self
         registerCells()
+        setupCells()
     }
 
     private func setupCells() {
-        ProgressHUD.show()
-            NetworkManager.shared.getRegions() { (result) in
-                switch result {
-                case .success(let data):
-                    print("The data after decoding is:\(data)")
-                    self.categories = data.map({ Regions.init(strArea: $0.strArea)})
-                    
-                    self.catogoryCollectionView.reloadData()
-                    ProgressHUD.dismiss()
-                case .failure(let error):
-                    print("The error is \(error.localizedDescription)")
-                    ProgressHUD.showError(error.localizedDescription)
-                }
+        NetworkManager.shared.getRegions() { (result) in
+            switch result {
+            case .success(let data):
+                print("The data after decoding is:\(data)")
+                self.categories = data.map({ Regions.init(strArea: $0.strArea)})
+                self.catogoryCollectionView.reloadData()
+                
+            case .failure(let error):
+                print("The error is \(error.localizedDescription)")
+                ProgressHUD.showError(error.localizedDescription)
             }
-//        NetworkManager.shared.getDesserts() { (result) in
-//            switch result {
-//            case .success(let data):
-//                print("DESSERTS is :\(data)")
-//            case .failure(let error):
-//                print("The Dessert Error is \(error.localizedDescription)")
-//            }
-//        }
-        
+        }
+        ProgressHUD.show()
+        NetworkManager.shared.getFoodCategories() { (result)  in
+            switch result {
+            case .success(let data):
+                print("The data after decoding is:\(data)")
+                self.foodcategories = data.map({ FoodCategory.init(idCategory: $0.idCategory, strCategory: $0.strCategory, strCategoryThumb: $0.strCategoryThumb, strCategoryDescription: $0.strCategoryDescription)})
+                self.foodCategoryCollectionView.reloadData()
+                ProgressHUD.dismiss()
+                
+            case .failure(let error):
+                print("The error is \(error.localizedDescription)")
+                ProgressHUD.showError(error.localizedDescription)
+            }
+        }
     }
     
     private func registerCells() {

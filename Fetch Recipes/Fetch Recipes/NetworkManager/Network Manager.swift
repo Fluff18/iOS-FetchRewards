@@ -22,6 +22,11 @@ struct NetworkManager {
         request(route: .deserts, method: .get, completion: completion)
     }
     
+    /// Function to get all the Food Categories
+    func getFoodCategories(completion: @escaping(Result<[FoodCategory], Error>) -> Void) {
+        request(route: .foodCategories, method: .get, completion: completion)
+    }
+    
     /// This function helps us generate the URLRequest
     /// - Parameters:
     ///   - route: Path to the resource in the backend

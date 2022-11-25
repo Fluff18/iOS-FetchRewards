@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		7FA3A5669460D3C386276AB2 /* Pods_Fetch_Recipes_Fetch_RecipesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F7F0D37DAA1F890CA3113DE /* Pods_Fetch_Recipes_Fetch_RecipesUITests.framework */; };
 		8D2A4146FEF22642A74C1FE4 /* Pods_Fetch_Recipes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFFA90A86A61A59DF74E158A /* Pods_Fetch_Recipes.framework */; };
+		A51F4EAF293149690084F6FD /* AllDishes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51F4EAE293149690084F6FD /* AllDishes.swift */; };
+		A51F4EB129314C920084F6FD /* AllDishesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51F4EB029314C920084F6FD /* AllDishesTableViewCell.swift */; };
 		A52C757A29263DE500D27EB3 /* CustomCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52C757929263DE500D27EB3 /* CustomCardView.swift */; };
 		A52C759F292DD4F500D27EB3 /* Network Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52C759E292DD4F500D27EB3 /* Network Manager.swift */; };
 		A52C75A1292DD56D00D27EB3 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52C75A0292DD56D00D27EB3 /* Route.swift */; };
@@ -63,6 +65,8 @@
 		2905FD0A640ABD3DAC37D4EC /* Pods-Fetch Recipes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fetch Recipes.debug.xcconfig"; path = "Target Support Files/Pods-Fetch Recipes/Pods-Fetch Recipes.debug.xcconfig"; sourceTree = "<group>"; };
 		5799414A8A03AE62650F42CA /* Pods-Fetch RecipesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fetch RecipesTests.debug.xcconfig"; path = "Target Support Files/Pods-Fetch RecipesTests/Pods-Fetch RecipesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5F7F0D37DAA1F890CA3113DE /* Pods_Fetch_Recipes_Fetch_RecipesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fetch_Recipes_Fetch_RecipesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A51F4EAE293149690084F6FD /* AllDishes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllDishes.swift; sourceTree = "<group>"; };
+		A51F4EB029314C920084F6FD /* AllDishesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllDishesTableViewCell.swift; sourceTree = "<group>"; };
 		A52C757929263DE500D27EB3 /* CustomCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCardView.swift; sourceTree = "<group>"; };
 		A52C759E292DD4F500D27EB3 /* Network Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Network Manager.swift"; sourceTree = "<group>"; };
 		A52C75A0292DD56D00D27EB3 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
@@ -152,6 +156,15 @@
 				E046D1EDA71DA3F6284DDC89 /* Pods-Fetch RecipesTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		A51F4EAD2931494B0084F6FD /* AllDishes */ = {
+			isa = PBXGroup;
+			children = (
+				A51F4EAE293149690084F6FD /* AllDishes.swift */,
+				A51F4EB029314C920084F6FD /* AllDishesTableViewCell.swift */,
+			);
+			path = AllDishes;
 			sourceTree = "<group>";
 		};
 		A52C757829263DCA00D27EB3 /* CardView */ = {
@@ -255,6 +268,7 @@
 		A5D59D522925C39D0027DA49 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A51F4EAD2931494B0084F6FD /* AllDishes */,
 				A5F09C0F2925E4F10077F51C /* Home */,
 				A5D59D542925C3BB0027DA49 /* Onboarding */,
 			);
@@ -557,6 +571,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5F09C16292620FA0077F51C /* CategoryCollectionViewCell.swift in Sources */,
+				A51F4EB129314C920084F6FD /* AllDishesTableViewCell.swift in Sources */,
 				A5D59D5B2925C8A10027DA49 /* OnboardingSlide.swift in Sources */,
 				A52C75AF292E9B9F00D27EB3 /* GetRecipe.swift in Sources */,
 				A5D59D222925BF830027DA49 /* AppDelegate.swift in Sources */,
@@ -565,6 +580,7 @@
 				A5F09C19292622C40077F51C /* FoodCategory.swift in Sources */,
 				A52C75A3292DD63000D27EB3 /* Method.swift in Sources */,
 				A52C75A7292DE16700D27EB3 /* Regions.swift in Sources */,
+				A51F4EAF293149690084F6FD /* AllDishes.swift in Sources */,
 				A52C75A1292DD56D00D27EB3 /* Route.swift in Sources */,
 				A5D59D592925C6970027DA49 /* UIView+Extension.swift in Sources */,
 				A5F09C112925E5120077F51C /* HomeCollectionViewController.swift in Sources */,

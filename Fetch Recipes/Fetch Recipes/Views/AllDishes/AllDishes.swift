@@ -11,18 +11,20 @@ class AllDishes: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     var AllDishes: [AllDesserts] = []
+    var selectedCategory: FoodCategory!
     
+    @IBOutlet weak var setTtile: UINavigationItem!
     override func viewDidLoad() {
         super.viewDidLoad()
+        setTtile.title = selectedCategory.strCategory
         tableView.reloadData()
         tableView.dataSource = self
         tableView.delegate = self
         setupCells()
-        
     }
     
     func setupCells() {
-        NetworkManager.shared.listFood() { (result) in
+        NetworkManager.shared.listFood(endPoint: selectedCategory.strCategory) { (result) in
             switch result {
             case .success(let data):
                 print("The data after decoding is:\(data)")

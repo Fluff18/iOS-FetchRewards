@@ -27,7 +27,7 @@ enum Route {
         case .foodCategories:
             return "json/v1/1/categories.php"
         case .listFood:
-            return "json/v1/1/filter.php?c=Dessert"
+            return "json/v1/1/filter.php?c="
         }
     }
 }

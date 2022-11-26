@@ -94,4 +94,14 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
        
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView == catogoryCollectionView {
+            
+        } else {
+            let controller = AllDishes.instantiate()
+            controller.selectedCategory = foodcategories[indexPath.row]
+            navigationController?.present(controller, animated: true, completion: nil)
+        }
+    }
+    
 }

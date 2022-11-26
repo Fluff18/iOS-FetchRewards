@@ -28,8 +28,9 @@ struct NetworkManager {
     }
     
     ///Function to list food in dessert
-    func listFood(completion: @escaping(Result<[AllDesserts], Error>) -> Void) {
-        request(route: .listFood, method: .get, completion: completion)
+    func listFood(endPoint: String, completion: @escaping(Result<[AllDesserts], Error>) -> Void) {
+        
+        request(route: .listFood, method: .get, parameters: ["c": endPoint], completion: completion)
     }
     
     

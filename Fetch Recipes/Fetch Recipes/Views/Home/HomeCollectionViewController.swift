@@ -11,9 +11,5 @@ class HomeCollectionViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
     }
-    
-
 }

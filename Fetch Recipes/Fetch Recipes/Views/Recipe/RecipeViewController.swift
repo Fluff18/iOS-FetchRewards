@@ -60,7 +60,7 @@ class RecipeViewController: UIViewController {
                     let j1 = j as? String
                     let j2 = j1!
                     print(i2, j2)
-                    IngMeasure = IngMeasure + "\(i2)  " + "\(j2)" + "\r\n\r\n"
+                    IngMeasure = IngMeasure + "\(i2)  " + "\(j2)" + "\r\n"
                 }
                 self.IngredientsTitle.text = IngMeasure
                 

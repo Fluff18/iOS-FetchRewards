@@ -509,7 +509,7 @@
                                                 </attributedString>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mbz-MD-HGk">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mbz-MD-HGk">
                                                 <rect key="frame" x="8" y="607" width="398" height="25"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -566,6 +566,7 @@
                     </view>
                     <size key="freeformSize" width="414" height="2000"/>
                     <connections>
+                        <outlet property="IngredientsTitle" destination="Mbz-MD-HGk" id="thj-i1-ZYe"/>
                         <outlet property="MealTitle" destination="2ho-0H-0rM" id="sJa-FP-QfL"/>
                         <outlet property="RecipeImageView" destination="h3n-RB-z42" id="rlN-3E-wpI"/>
                         <outlet property="RecipeInstructionsView" destination="oeB-yG-tj4" id="k80-O4-pXS"/>

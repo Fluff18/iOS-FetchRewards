@@ -12,10 +12,12 @@ class RecipeViewController: UIViewController {
     @IBOutlet weak var MealTitle: UILabel!
     @IBOutlet weak var RecipeImageView: UIImageView!
     @IBOutlet weak var tagTitle: UILabel!
+    @IBOutlet weak var IngredientsTitle: UILabel!
     
     var selectedRecipe: GetRecipe!
     var AllIngredients = [Any]()
     var AllMeasures = [Any]()
+    var IngMeasure = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,7 +53,16 @@ class RecipeViewController: UIViewController {
                         }
                     }
                 }
-                print(self.AllMeasures, self.AllIngredients)
+                
+                for (i, j) in zip(self.AllIngredients, self.AllMeasures) {
+                    let i1 = i as? String
+                    let i2 = i1!
+                    let j1 = j as? String
+                    let j2 = j1!
+                    print(i2, j2)
+                    IngMeasure = IngMeasure + "\(i2)  " + "\(j2)" + "\r\n\r\n"
+                }
+                self.IngredientsTitle.text = IngMeasure
                 
             case .failure(let error):
                 print("The error is \(error.localizedDescription)")

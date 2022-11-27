@@ -25,7 +25,7 @@ class RecipeViewController: UIViewController {
     
     
     func setupCells() {
-        NetworkManager.shared.getRecipe(endPoint: "52772") { [self] (result) in
+        NetworkManager.shared.getRecipe(endPoint: "53032") { [self] (result) in
             switch result {
             case .success(let data):
                 print("The data after decoding is:\(data)")
@@ -36,16 +36,15 @@ class RecipeViewController: UIViewController {
                 self.tagTitle.text = data[0].strTags
                 
                 let mirror = Mirror(reflecting: data[0])
-                print(mirror)
                 for child in mirror.children {
                     let childLabelString = child.label!
                     if (childLabelString.starts(with: "strIngredient")) {
-                        if(child.value != nil) {
+                        if(child.value as? String != nil && child.value as? String != "") {
                             self.AllIngredients.append(child.value)
                         }
                     }
                     if (childLabelString.starts(with: "strMeasure")) {
-                        if(child.value != nil) {
+                        if(child.value as? String != nil) {
                             self.AllMeasures.append(child.value)
                         }
                     }

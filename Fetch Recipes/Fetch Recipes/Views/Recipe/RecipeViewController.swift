@@ -14,7 +14,7 @@ class RecipeViewController: UIViewController {
     @IBOutlet weak var tagTitle: UILabel!
     @IBOutlet weak var IngredientsTitle: UILabel!
     
-    var selectedRecipe: GetRecipe!
+    var selectedRecipe: String = ""
     var AllIngredients = [Any]()
     var AllMeasures = [Any]()
     var IngMeasure = ""
@@ -27,7 +27,7 @@ class RecipeViewController: UIViewController {
     
     
     func setupCells() {
-        NetworkManager.shared.getRecipe(endPoint: "53032") { [self] (result) in
+        NetworkManager.shared.getRecipe(endPoint: selectedRecipe) { [self] (result) in
             switch result {
             case .success(let data):
                 print("The data after decoding is:\(data)")

@@ -50,4 +50,10 @@ extension AllDishes: UITableViewDataSource, UITableViewDelegate {
         cell.setup(dish: dish)
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let controller = RecipeViewController.instantiate()
+        controller.selectedRecipe = AllDishes[indexPath.row].idMeal
+        present(controller, animated: true, completion: nil)
+    }
 }

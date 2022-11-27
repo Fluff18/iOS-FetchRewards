@@ -446,7 +446,7 @@
         <!--Recipe View Controller-->
         <scene sceneID="4q9-6a-ZbG">
             <objects>
-                <viewController id="OA1-GJ-UCx" customClass="RecipeViewController" customModule="Fetch_Recipes" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RecipeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="OA1-GJ-UCx" customClass="RecipeViewController" customModule="Fetch_Recipes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tnq-ZX-DtP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="2000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

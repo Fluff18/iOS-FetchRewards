@@ -9,6 +9,7 @@ import Foundation
 class RecipeViewController: UIViewController {
     
     @IBOutlet weak var RecipeInstructionsView: UILabel!
+    @IBOutlet weak var MealTitle: UILabel!
     @IBOutlet weak var RecipeImageView: UIImageView!
     var selectedRecipe: GetRecipe!
     var Recipes: [GetRecipe] = []

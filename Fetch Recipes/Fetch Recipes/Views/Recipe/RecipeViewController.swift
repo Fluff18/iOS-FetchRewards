@@ -38,14 +38,16 @@ class RecipeViewController: UIViewController {
                 let mirror = Mirror(reflecting: data[0])
                 for child in mirror.children {
                     let childLabelString = child.label!
-                    if (childLabelString.starts(with: "strIngredient")) {
-                        if(child.value as? String != nil && child.value as? String != "") {
-                            self.AllIngredients.append(child.value)
-                        }
-                    }
-                    if (childLabelString.starts(with: "strMeasure")) {
-                        if(child.value as? String != nil) {
-                            self.AllMeasures.append(child.value)
+                    if(child.value as? String !=  nil) {
+                        let childValueString = child.value as? String
+                        let trimmed = childValueString?.trimmingCharacters(in: .whitespacesAndNewlines)
+                        if(trimmed != "") {
+                            if (childLabelString.starts(with: "strIngredient")) {
+                                self.AllIngredients.append(child.value)
+                            }
+                            if (childLabelString.starts(with: "strMeasure")) {
+                                self.AllMeasures.append(child.value)
+                            }
                         }
                     }
                 }

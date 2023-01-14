@@ -14,7 +14,13 @@ class CategoryCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var categoryTitleLabel: UILabel!
     
+<<<<<<< HEAD
     func setup(category: Regions) {
         categoryTitleLabel.text = category.strArea
+=======
+    func setup(category: FoodCategory) {
+        categoryTitleLabel.text = category.strCategory
+        categoryImageView.kf.setImage(with: category.strCategoryThumb?.asUrl)
+>>>>>>> master
     }
 }

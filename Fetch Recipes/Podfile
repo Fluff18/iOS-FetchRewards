@@ -4,7 +4,9 @@
 target 'Fetch Recipes' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-
+  
+  # Pods for Progress
+  pod "ProgressHUD"
   # Pods for Fetch Recipes
     pod "ProgressHUD"
     pod "Kingfisher"

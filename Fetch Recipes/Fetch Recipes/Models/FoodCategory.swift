@@ -7,6 +7,14 @@
 
 import Foundation
 
+<<<<<<< HEAD
+struct FoodCategory: Decodable {
+    let idCategory: String
+    let strCategory: String
+    let strCategoryThumb: String?
+    let strCategoryDescription: String?
+=======
 struct FoodCategory: Codable {
     let idCategory, strCategory, strCategoryThumb, strCategoryDescription: String?
+>>>>>>> master
 }

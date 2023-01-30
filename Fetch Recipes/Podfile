@@ -8,6 +8,7 @@ target 'Fetch Recipes' do
   # Pods for Progress
   pod "ProgressHUD"
   # Pods for Fetch Recipes
+    pod "ProgressHUD"
     pod "Kingfisher"
   target 'Fetch RecipesTests' do
     inherit! :search_paths
